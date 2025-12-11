@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pinova App Download</title>
+<script>
+   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+   if (/android/i.test(userAgent)) {
+       window.location.href = "https://play.google.com/store/apps/details?id=com.softwise.PinovaDoc&hl=hr";
+   } 
+   else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+       window.location.href = "https://apps.apple.com/hr/app/pinova-mobile/id1559684798";
+   } 
+   else {
+       window.location.href = "https://play.google.com/store/apps/details?id=com.softwise.PinovaDoc&hl=hr";
+   }
+</script>
+</head>
+<body>
+</body>
+</html>
